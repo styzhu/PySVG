@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import os
+import helper
 
 svg_ns = '{http://www.w3.org/2000/svg}'
 
@@ -11,7 +12,7 @@ root = tree.getroot()
 g = root.find(svg_ns + 'g')
 
 for rect in g.findall(svg_ns+'rect'):
-    print rect.attrib
+    print(rect.attrib)
 
 
 '''
